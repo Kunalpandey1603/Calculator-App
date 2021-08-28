@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="input" id="input">
+        <h1 class="first-text">Enter first Number Below</h1>
+        <input type="text" id="first-input" value="1">
+        <h1 class="second-text">Enter Second Number Below</h1>
+        <input type="text" id="second-input" value="1">
+    </div>
+    <div class="calculator">
+        <div class="add">
+            <!-- <img src="addition.png" onclick="caluclation('add')"> -->
+        <button onclick="caluclation('add')">ADD</button>
+        </div>
+        <div class="sub">
+            <!-- <img src="subtraction.png" onclick="caluclation('add')"> -->
+            <button onclick="caluclation('subtract')">SUBTRACT</button>
+        </div>
+        <div class="multi">
+            <!-- <img src="multiply.png" onclick="caluclation('add')"> -->
+            <button onclick="caluclation('multiply')">MULTIPLY</button>
+        </div>
+        <div class="divide">
+            <!-- <img src="division.png" onclick="caluclation('add')"> -->
+            <button onclick="caluclation('divide')">DIVIDE</button>
+        </div>
+        <div class="percentage">
+            <!-- <img src="percentage.png" onclick="caluclation('add')"> -->
+            <button onclick="caluclation('percentage')">PERCENTAGE</button> 
+        </div>
+    </div>
+    <div id="result">
+     
+    </div>
+    <div class="clear">
+        <button onclick="clearInput()">Clear Input Fields</button>
+    </div>
+</body>
+</html>

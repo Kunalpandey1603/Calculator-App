@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(250, 227, 227);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    margin: 20px 0 10px;
+    font-size: 1.1rem;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.first-text , .second-text {
+    padding: 20px;
+}
+
+#first-input , #second-input {
+    font-size: 2rem;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.add , .sub , .multi , .divide , .percentage {
+    display: flex;
+  justify-content: space-around;
+}
+.add button , .sub button , .multi button , .divide button , .percentage button {
+    width: 150px;
+    height: 50px;
+  margin: 5px;
+  font-size: 1rem;
+    }
+
+.add , .sub , .multi , .divide , .percentage {
+    padding: 10px;
+}
+
+#result {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+.clear {
+    display: flex;
+  justify-content: space-around;
+}
+
+.clear button{
+    width: 150px;
+    height: 50px;
+    margin: 60px;
+    font-size: 1rem;
+   }
