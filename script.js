@@ -1,10 +1,10 @@
-let tempResult= 0;
 let a=0;
+let tempResult= 0;
 const caluclation = (selected) => {
+  
+   
  const firstInput = +document.getElementById('first-input').value;
- console.log('firstInput',firstInput);
  const secondInput = +document.getElementById('second-input').value;
- console.log('secondInput',secondInput);
 let result;
  switch(selected){
      case 'add':
@@ -27,13 +27,11 @@ let result;
    document.getElementById("result").innerText +=''; 
  }
  else {
-    if(result === tempResult){
+  if(result === tempResult){
        if (a===0) {
          document.getElementById("result").innerText += 'Answer = ' + result;
-         a++;
        }
       else {
-
       }
   }
     else {
@@ -42,11 +40,21 @@ let result;
       }
       document.getElementById("result").innerText += 'Answer = ' + result;
       tempResult=result;
+      a++;
     }
+   }
+   if(document.getElementById('result').style.display === 'none') {
+
+      document.getElementById('result').style.display="grid";
+      document.getElementById('result').style.flexDirection = "column";
+      document.getElementById('result').style.alignItems= "center";
+      document.getElementById('result').style.fontSize= "3rem";
+      document.getElementById('result').style.justifyContent = 'space-around';
    }
 }
 
 const clearInput = ()=> {
    document.getElementById('first-input').value="";
    document.getElementById('second-input').value="";
+   document.getElementById('result').style.display="none";
 }
